@@ -199,7 +199,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Command1_Click()
-    If Val(Text3) <= Val(Form1.Text31) Or Val(Text3) >= Val(Form1.Text35) Then
+    If Val(Text3) <= Val(Form1.Text31) Then
         Text4.Text = 0
         Text4.Visible = True
         Label7.Visible = True
@@ -212,6 +212,17 @@ Private Sub Command1_Click()
     Else
     If Val(Text3) >= Val(Form1.Text31) And Val(Text3) <= Val(Form1.Text32) Then
         Text4.Text = (Val(Text3) - Val(Form1.Text31)) / (Val(Form1.Text32) - Val(Form1.Text31))
+        Text4.Visible = True
+        Label7.Visible = True
+        Label8.Visible = True
+        Label9.Visible = True
+        Label10.Visible = True
+        Label11.Visible = True
+        Label10 = Text3.Text
+        Command1.Enabled = True
+    Else
+    If Val(Text3) >= Val(Form1.Text35) Then
+        Text4.Text = 1
         Text4.Visible = True
         Label7.Visible = True
         Label8.Visible = True
@@ -241,6 +252,7 @@ Private Sub Command1_Click()
         Label11.Visible = True
         Label10 = Text3.Text
         Command1.Enabled = True
+    End If
     End If
     End If
     End If

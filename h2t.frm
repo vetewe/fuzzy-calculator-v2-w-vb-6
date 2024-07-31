@@ -199,7 +199,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Command1_Click()
-    If Val(Text3) <= Val(Form1.Text5) Then
+    If Val(Text3) <= Val(Form1.Text11) Then
         Text4.Text = 0
         Text4.Visible = True
         Label7.Visible = True
@@ -210,8 +210,8 @@ Private Sub Command1_Click()
         Label10 = Text3.Text
         Command1.Enabled = True
     Else
-    If Val(Text3) >= Val(Form1.Text5) And Val(Text3) <= Val(Form1.Text6) Then
-        Text4.Text = (Val(Text3) - Val(Form1.Text5)) / (Val(Form1.Text6) - Val(Form1.Text5))
+    If Val(Text3) >= Val(Form1.Text11) And Val(Text3) <= Val(Form1.Text12) Then
+        Text4.Text = (Val(Text3) - Val(Form1.Text11)) / (Val(Form1.Text12) - Val(Form1.Text11))
         Text4.Visible = True
         Label7.Visible = True
         Label8.Visible = True
@@ -221,7 +221,7 @@ Private Sub Command1_Click()
         Label10 = Text3.Text
         Command1.Enabled = True
     Else
-    If Val(Text3) >= Val(Form1.Text9) Then
+    If Val(Text3) >= Val(Form1.Text15) Then
         Text4.Text = 1
         Text4.Visible = True
         Label7.Visible = True
@@ -232,7 +232,7 @@ Private Sub Command1_Click()
         Label10 = Text3.Text
         Command1.Enabled = True
     Else
-    If Val(Text3) >= Val(Form1.Text6) And Val(Text3) <= Val(Form1.Text8) Then
+    If Val(Text3) >= Val(Form1.Text12) And Val(Text3) <= Val(Form1.Text14) Then
         Text4.Text = 1
         Text4.Visible = True
         Label7.Visible = True
@@ -243,7 +243,7 @@ Private Sub Command1_Click()
         Label10 = Text3.Text
         Command1.Enabled = True
     Else
-        Text4.Text = (Val(Form1.Text9) - Val(Text3)) / (Val(Form1.Text9) - Val(Form1.Text8))
+        Text4.Text = (Val(Form1.Text15) - Val(Text3)) / (Val(Form1.Text15) - Val(Form1.Text14))
         Text4.Visible = True
         Label7.Visible = True
         Label8.Visible = True
